@@ -1,0 +1,16 @@
+<!--detail.wxml-->
+<view class="container">
+    <view class="text-show">
+     {{key}}
+
+     {{final_value}}
+    </view>
+    <scroll-view scroll-y="true" class="btn-scroll">
+        <block wx:for="{{value_data}}" wx:for-item="v">
+            <button type="default" bindtap="bindValueButtonTap" data-value="{{v}}">{{v}}</button> 
+        </block>
+    </scroll-view>
+    <view>
+        <button type="primary" bindtap="bindValueButtonReturn" >return</button>
+    </view>
+</view>

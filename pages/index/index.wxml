@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="text-show">
+  </view>
+  <scroll-view scroll-y="true" class="btn-scroll">
+      <block wx:for="{{keys_data}}" wx:for-item="key">
+        <button type="default" bindtap="binKeyButtonTip" data-key="{{key}}">{{key}}</button> 
+      </block>
+  </scroll-view>
+</view>
